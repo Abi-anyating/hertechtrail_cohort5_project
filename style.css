@@ -24,7 +24,7 @@
 -------------------------------------------------------------------*/
 
 body {
-    color: #999999;
+    color: black;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.80857;
@@ -35,7 +35,7 @@ html, body{
 }
 
 body.demos .section {
-    background: url(images/bg.png) repeat top center #f2f3f5;
+    background: url(images/bg.png) repeat top center:#f2f3f5;
 }
 
 body.demos .section-title img {
@@ -48,7 +48,7 @@ body.demos .service-widget h3 {
     border-bottom: 1px solid #ededed;
     font-size: 18px;
     padding: 20px 0;
-    background-color: #ffffff;
+    background-color:#999999;
 }
 
 body.demos .service-widget {
@@ -151,7 +151,7 @@ a,
 
 .btn-custom {
     margin-top: 20px;
-    background-color: transparent !important;
+    background-color:transparent !important;
     border: 2px solid #ddd;
     padding: 12px 40px;
     font-size: 16px;
@@ -304,19 +304,19 @@ a img.aligncenter {
 -------------------------------------------------------------------*/
 
 .navbar-dark{
-	background-color: transparent;
+	background-color:black;
 	transition: all 0.3s ease 0s;
 }
 
 .navbar-dark .navbar-nav .nav-link{
-	color: #ffffff;
+	color:#28a9e2;
 	letter-spacing: 1px;
 	font-size: 14px;
 	position: relative;
 	text-transform: capitalize;
 }
 .navbar-dark .navbar-nav .nav-link:hover{
-	color: #ffffff;
+	color:#28a9e2;
 }
 .navbar-dark .navbar-nav .nav-link.active{
 	font-weight: 600;
@@ -325,7 +325,7 @@ a img.aligncenter {
     content: '';
     width: 0;
     height: 3px;
-    background: #ffffff;
+    background:blue;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -348,15 +348,15 @@ a img.aligncenter {
 
 
 #mainNav.navbar-shrink .navbar-nav .nav-link{
-	color: #28a9e2;
+	color:#28a9e2;
 }
 
 #mainNav.navbar-shrink .navbar-nav .nav-link::after{
-	background: #28a9e2;
+	background:#28a9e2;
 }
 
 #mainNav.navbar-shrink .navbar-nav .nav-link.active{
-	color: #ffffff;
+	color:#ffffff;
 }
 
 #mainNav.navbar-shrink .navbar-brand img{
@@ -401,7 +401,7 @@ a img.aligncenter {
 	font-weight: 700;
 	font-size: 62px;
 	text-transform: capitalize;
-    padding-top:200px;
+    padding-top:500px;
 }
 .heading p{
 	font-size: 18px;
@@ -473,7 +473,7 @@ xclip
 #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #ffffff;
+    background-color:#ffffff;
 	-webkit-animation: fadeInDown 700ms;
 	animation: fadeInDown 700ms;
 	-webkit-backface-visibility: hidden;
@@ -715,7 +715,7 @@ xclip
 }
 
 .services-inner-box::after{
-	background: #28a9e2;
+	background:black;
 	width: 0px;
 	height: 0px;
 	content: "";
@@ -888,8 +888,8 @@ xclip
 
 .portfolio-filter ul li .btn-dark {
     box-shadow: none;
-    background-color: transparent;
-    border: 1px solid #e6e7e6 !important;
+    background-color:transparent;
+    border: 1px solid #e6e7e6!important;
     color: #1f1f1f;
     font-weight: 400;
     font-size: 13px;
@@ -1712,150 +1712,6 @@ hr.invis1 {
 
 
 /*------------------------------------------------------------------
-    Our Team
--------------------------------------------------------------------*/
-
-.our-team {
-	text-align: center;
-}
-.our-team .pic{
-    border-top: none;
-    border-bottom: 5px solid #28a9e2;
-    border-radius: 50% 50% 0 50%;
-    overflow: hidden;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .pic{    
-    border-bottom-color: #1c142b;
-    border-radius: 0 50%;
-}
-.our-team .pic img{
-    width: 100%;
-    height: auto;
-    transition: all 0.5s ease 0s;
-}
-.our-team .team-content{ padding: 20px 0; }
-.our-team .title{
-    font-size: 22px;
-    font-weight: 700;
-    color: #28a9e2;
-    text-transform: uppercase;
-    margin: 0 0 5px 0;
-}
-.our-team .post{
-    display: block;
-    font-size: 17px;
-    color: #878484;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-}
-.our-team .social{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.our-team .social li{ display: inline-block; }
-.our-team .social li a{
-    display: block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    border-radius: 50%;
-    border: 1px solid #28a9e2;
-    background: #fff;
-    font-size: 17px;
-    color: #28a9e2;
-    text-align: center;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .social li a{
-    background: #1c142b;
-    color: #fff;
-}
-@media only screen and (max-width: 990px){
-    .our-team{ margin-bottom: 30px; }
-}
-
-/*------------------------------------------------------------------
-    Pricing
--------------------------------------------------------------------*/
-
-
-.pricingTable{
-    background: #fff;
-    border-radius: 10px;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    transition: all 0.3s ease 0s;
-}
-.pricingTable:hover{ box-shadow: 0 0 5px rgba(0,0,0,0.8) inset, 0 0 10px rgba(0,0,0,0.8); }
-.pricingTable svg{
-    display: block;
-    margin-left: -1px;
-}
-.pricingTable .pricing-content{
-    padding: 50px 0 30px;
-    position: relative;
-}
-.pricingTable .title{
-    font-size: 35px;
-    font-weight: 600;
-    color: #28a9e2;
-    text-transform: uppercase;
-    margin: 0 0 10px 0;
-}
-.pricingTable .pricing-content ul{
-    padding: 0;
-    margin: 0 0 30px 0;
-    list-style: none;
-}
-.pricingTable .pricing-content ul li{
-    font-size: 18px;
-    color: rgba(0,0,0,0.3);
-    line-height: 40px;
-    text-transform: capitalize;
-}
-.pricingTable .pricingTable-signup{
-    display: inline-block;
-    padding: 8px 50px;
-    background: #333333;
-    border-radius: 100px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-    position: relative;
-    transition: all 0.3s ease 0s;
-}
-.pricingTable:hover .pricingTable-signup{ box-shadow: 0 0 10px #28a9e2; }
-.pricingTable .pricingTable-signup:hover{
-    color: #ffffff;
-    background: #fff;
-    box-shadow: 0 0 10px #28a9e2, 0 0 10px #1c142b inset;
-}
-.pricingTable.blue .title{ color: #28a9e2; }
-.pricingTable.blue .pricingTable-signup{ background: #333333; }
-.pricingTable.blue:hover .pricingTable-signup{ box-shadow: 0 0 10px #28a9e2; }
-.pricingTable.blue .pricingTable-signup:hover{
-    color: #ffffff;
-    background: #fff;
-    box-shadow:0 0 10px #28a9e2, 0 0 10px #1c142b inset;
-}
-.pricingTable.red .title{ color: #28a9e2; }
-.pricingTable.red .pricingTable-signup{ background: #333333; }
-.pricingTable.red:hover .pricingTable-signup{ box-shadow: 0 0 10px #28a9e2; }
-.pricingTable.red .pricingTable-signup:hover{
-    color: #ffffff;
-    background: #fff;
-    box-shadow:0 0 10px #28a9e2, 0 0 10px #1c142b inset;
-}
-@media only screen and (max-width: 990px){
-    .pricingTable{ margin-bottom: 30px; }
-}
-
-
-/*------------------------------------------------------------------
     CONTACT
 -------------------------------------------------------------------*/
 
@@ -1968,7 +1824,7 @@ hr.invis1 {
 }
 
 .dropdown-menu > li > a {
-    background-color: transparent !important;
+    background-color: brown !important;
     color: #bcbcbc !important;
     font-size: 15px;
     padding: 10px 20px;
@@ -2190,12 +2046,12 @@ select.mobile-device {
 .contact_form {
     border: 1px solid #ededed;
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
-    background-color: #f2f3f5;
+    background-color: brown;
     padding: 40px 30px;
 }
 
 .contact_form .form-control {
-    background-color: #333333;
+    background-color:brown;
     margin-bottom: 30px;
     border: 1px solid #ebebeb;
     box-sizing: border-box;
@@ -2230,7 +2086,7 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(images/1.jpg) no-repeat center center #ffffff;
+    background: url(images/bg.png) no-repeat center center;
 }
 
 .contact_form textarea.form-control{
@@ -2601,7 +2457,7 @@ select.mobile-device {
     font-size: 18px;
     border: 2px solid #ffffff !important;
     color: #ffffff;
-    background-color: transparent;
+    background-color:transparent;
 }
 
 .btn-dark {
@@ -2609,7 +2465,7 @@ select.mobile-device {
     font-size: 18px;
     border: 1px solid #ececec !important;
     color: #1f1f1f;
-    background-color: transparent;
+    background-color:transparent;
 }
 
 .btn-light:hover,
